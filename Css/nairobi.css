@@ -1,0 +1,91 @@
+body{
+	background-color:#FF8C00;
+}
+.dropdownmenu ul, .dropdownmenu li {
+	margin: 0;
+	padding-left:5%;
+	display:inline-block;
+	/* padding-bottom:10%;	 */
+}
+.dropdownmenu ul {
+	list-style: none;
+	width: 100%;
+}
+.dropdownmenu li {
+	float: left;
+	position: relative;
+	width:auto;
+	
+}
+.dropdownmenu a {
+	background: orangered;
+	color: #FFFFFF;
+	display: block;
+	font: bold 12px/20px sans-serif;
+	padding: 20px 35px;
+	text-align: center;
+	text-decoration: none;
+	font-size:15px;
+
+}
+.dropdownmenu li:hover a {
+	background:orangered;;
+}
+#submenu {
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 35px;
+	visibility: hidden;
+	z-index: 1;
+}
+li:hover ul#submenu {
+	opacity: 1;
+	top: 40px;
+	visibility: visible;
+}
+#submenu li {
+	float: none;
+	width: 100%;
+}
+#submenu a:hover {
+	background: #DF4B05;
+}
+#submenu a {
+	background-color:#000000;
+}
+h1,h2{
+	text-align:center;
+	padding-bottom:30px;
+/* }
+.carousel-inner{
+	padding-left: 23%;
+	padding-bottom:10%; */
+}
+.cool{
+	background-color: green;
+}
+
+
+#np{
+	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSpE9bar9hywia3eY5V6uRl0aSSBXxa_UoSsrCgUW_xB7jYHOrtA');
+	padding: 170px;
+	background-size: cover;	
+}
+.line{
+	text-align: center;
+}
+#kk{
+	background-image: url("https://images.trvl-media.com/hotels/1000000/60000/57300/57255/047e4ef8_z.jpg");
+	padding: 170px;
+	background-size: cover;	
+}
+.line2{
+	font-size: xx-large;
+}
+.nyendwe img{
+border-radius: 50%;
+}
+.hotels{
+	padding-top:20px;
+}
