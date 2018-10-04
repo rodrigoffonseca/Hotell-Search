@@ -1,0 +1,197 @@
+/*  ***************************Root**********************************/
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  /* background-image: url(../images/image1.jpg); */
+  /* background-position: center; */
+  background-size: cover;
+
+
+}
+/* *******************************nav********************************************* */
+.nav{
+  /* background-color: #78180A; */
+  height: 70px;
+  /* width: 100%; */
+  background-attachment: fixed;
+}
+.nav ul{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  width: 100%;
+  background-color: #0D122C;
+  opacity: .8;
+  /* margin: auto; */
+}
+.nav li{
+  float: left;
+  margin-right: 40px;
+  width: 150px;
+  height: 40px;
+  display: inline;
+  line-height: 70px;
+  text-align: center;
+  font-size: 16px;
+}
+.nav a{
+  text-decoration: none;
+  color: #ffff;
+  display: block;
+  /* background-color: #0D122C; */
+}
+.nav a:hover{
+  border-bottom: green;
+  color: #e3e3e3;
+}
+.nav ul li ul li{
+  /* display: none; */
+}
+.nav ul li:hover ul li{
+  display: block;
+}
+
+.nav li{
+  display: inline;
+}
+.fab{
+  color: #e3e3e3;
+  font-size: 30px;
+}
+.nav input{
+  height: 30px;
+  margin-top: -30px;
+  margin-left: 118px;
+  /* background: transparent; */
+  border-left: 1px solid #ffff;
+}
+.search{
+  background-color: rgba(0,0,0,.8);
+  padding: 10px;
+  font-size: 20px;
+  margin-left: 150px;
+}
+/* *******************************header-content****************************************** */
+.header-content{
+  border:1px solid #fff;
+  border-radius: 40px;
+  display:inline-block;
+  /* width: 50px; */
+  transform: translate(14%,10%);
+  width:100%;
+  text-align: center;
+  padding: 50px;
+  background-color: rgba(70, 103, 102,.9);
+}
+.divider{
+  font-family: 'Cinzel', serif;
+  font-weight: bold;
+  color: rgba(228, 242, 242,.2);
+  text-shadow: 0px 1px 0px rgba(0,0,0,.9),
+                0px 2px 0px #ffff;
+}
+button{
+  width: 100px;
+  box-shadow: 10px solid rgba(0,0,0,.5);
+}
+.hidden{
+  padding: 20px;
+  background-color: rgba(70, 103, 102,.9);
+  width: 600px;
+  min-height: 600px;
+  visibility: hidden;
+}
+.hidden input{
+  /* display: block; */
+}
+
+/*  *****************************carousel*************************************/
+/* .particlesJS{
+  height: 1000px;
+  width: 100vh;
+  background-color: blue;
+} */
+.img{
+  height:1200px;
+  width: 1200px;
+
+}
+.carousel-inner>.item {
+    -webkit-transition: -webkit-transform 3s ease-in-out !important;
+    -o-transition: -o-transform 3s ease-in-out !important;
+    transition: transform 3s ease-in-out !important;
+    z-index: -99999;
+}
+
+/* *******************************Most visited hotels****************************************** */
+.popular-hotels{
+  background-color: rgba(226, 229, 229);
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 0  rgba(0,0,0,.2),
+              0 2px 0 #CED8D8;
+  /* padding: 20px; */
+  /* min-height: 200px; */
+
+}
+.popular-hotels img{
+  padding: 10px;
+  margin-left: -30px;
+  border: 1px solid rgba(0,0,0,.3);
+}
+.kempiski-details{
+  margin-left: 180px;
+  margin-top: -200px;
+
+}
+.kempiski-details li{
+  list-style: none;
+  display: inline;
+  font-size: 20px;
+  font-weight: lighter;
+  margin: -15px;
+  position: relative;
+  color: #0D122C;
+  /* max-width: 340px; */
+  /* background-color: blue; */
+}
+.kempiski-details h3{
+  background-color: #0D122C;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 5px;
+  text-align: center;
+  color: #ffff;
+}
+.kempiski-details h3:hover{
+  background-color: #787B7B;
+  box-shadow: 0 1px 0 rgba(0,0,0,.9);
+}
+.offered li{
+  font-size: 15px;
+  padding: 22px;
+}
+.directions {
+  float: right;
+  padding: 10px;
+  margin-right: -65px;
+  /* border: 1px solid rgba(0,0,0,.3); */
+  margin-top: -210px;
+}
+.directions span{
+  font-size: 20px;
+  font-weight: bolder;
+  color: #ffff;
+  height: 40px;
+  width: 150px;
+  background-color:#0D122C;
+  padding: 5px;
+}
+/* *******************************Tips******************************************* */
+.Tips{
+  height: 400px;
+  width: auto;
+  background-color: blue;
+}
