@@ -1,0 +1,108 @@
+.dropbtn {
+    /* background-color: #4CAF50; */
+    color: black;
+    padding:8px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding:10px;
+    border-radius: 2px solid grey;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+/* *{
+
+background-color:grey;
+   /* background-image:url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/yI9FRzo/animated-glowing-red-smoke-or-gas-descending-falloff-slowly-against-transparent-background-in-4k-alpha-channel-embedded-with-4k-png-file_rz0emj24__F0013.png");
+ }
+/* .hotels{ */
+
+  /* padding-left: 50px; */
+/* } */
+
+body{
+    background-color: #c6eada  ;
+
+}
+.img{
+    size: 100%;
+    background-repeat: none;
+}
+h1{
+    font-family: 'Notable', sans-serif;
+    text-align: center;
+}
+h2{
+  color:red;
+}
+.vertical {
+    position: relative;
+    background-color: #DDDDDD;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    float: right;
+    -moz-transform: rotate(270deg);  /* FF3.5+ */
+    -o-transform: rotate(270deg);  /* Opera 10.5 */
+    -webkit-transform: rotate(-90deg);  /* Saf3.1+, Chrome */
+}
+
+
+/* img{
+    width: 100%;
+    height: 500px;
+
+} */
+
+ .bg-warning{
+   text-align: center;
+ }
+ .bg-success{
+   text-align: center;
+ }
+ .bg-danger{
+   text-align: center;
+ }
+ .well{
+   padding:1px;
+   margin:1px;
+   background-color: #ead4b9;
+ }
+ .jumbotron{
+   background-color:#ead4b9;
+ }
+ .breakfast{
+    background-color: #ead4b9;
+ }
+ .image{
+    margin-left: 65px;
+ }
+ .hotel{
+display:flex;
+flex-direction: row;
+padding:5px;
+text-align:center;
+margin-left: 60px;
+    }
