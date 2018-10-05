@@ -30,6 +30,7 @@ Technologies Used
 * BOOTSTRAP
 * JAVASCRIPT
 
-##License
-####MIT (c) 201 HOTEL SEARCH
+## License
+
+#### MIT (c) 201 HOTEL SEARCH
 
