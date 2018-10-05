@@ -1,4 +1,4 @@
-/*  ***************************Root**********************************/
+    /*  ***************************Root**********************************/
 *{
   margin: 0;
   padding: 0;
@@ -67,23 +67,29 @@ body{
   /* background: transparent; */
   border-left: 1px solid #ffff;
 }
-.search{
-  background-color: rgba(0,0,0,.8);
-  padding: 10px;
+.city{
+  /* background-color: rgba(0,0,0,.8); */
+  padding: 5px;
   font-size: 20px;
-  margin-left: 150px;
+  margin-top: 10px;
+  /* margin-left: 1150px; */
+  /* margin-left: 150px; */
 }
+/* .nakuru{
+  display:none;
+} */
 /* *******************************header-content****************************************** */
 .header-content{
   border:1px solid #fff;
   border-radius: 40px;
   display:inline-block;
   /* width: 50px; */
-  transform: translate(14%,10%);
+  transform: translate(50%,50%);
   width:100%;
   text-align: center;
   padding: 50px;
   background-color: rgba(70, 103, 102,.9);
+  height: 300px;
 }
 .divider{
   font-family: 'Cinzel', serif;
@@ -102,6 +108,8 @@ button{
   width: 600px;
   min-height: 600px;
   visibility: hidden;
+  margin-top: -200px;
+  margin-left: -100px;
 }
 .hidden input{
   /* display: block; */
@@ -190,8 +198,121 @@ button{
   padding: 5px;
 }
 /* *******************************Tips******************************************* */
-.Tips{
-  height: 400px;
-  width: auto;
-  background-color: blue;
+.Tips ul{
+  margin-top: 100px;
+	-webkit-perspective:1000;
+
+
 }
+.Tips li{
+	margin-bottom: 40px;
+  padding-left: 50px;
+
+}
+
+.Tips ul li{
+	height: 200px;
+	width: 200px;
+	float: left;
+	margin-right: 30px;
+	list-style: none;
+	position: relative;
+	cursor: pointer;
+}
+li:hover .front{
+	z-index: 0;
+	-webkit-transform:rotateY(180deg);
+}
+li:hover .back{
+	-webkit-transform:rotateY(0);
+}
+.Tips div{
+	height: 100%;
+	width:100%;
+	position: absolute;
+	-webkit-transition:all 1s;
+	-webkit-backface-visibility:hidden;
+	-webkit-box-shadow:0 13px 10px -8px rgba(0,0,0,.5);
+}
+li .front{
+	z-index: 3;
+	text-align: center;
+	-line-height: 200px;
+	-font-size: 0px;
+	background-color: #e3e3e3;
+}
+li .back{
+	-webkit-transform:rotateY(180deg);
+}
+/* *********************************Collaborators********************************************* */
+marquee{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    margin-top: 600px;
+    background-color: rgba(206, 227, 227,.3);
+    height: 250px;
+
+}
+marquee img{
+  border-radius: 50%;
+  margin: 30px;
+  box-shadow:0 13px 10px -8px rgba(0,0,0,.5);
+  transition: .2s ease-in-out;
+}
+marquee img:hover{
+  filter: none;
+  -webkit-filter: none;
+  filter:drop-shadow(1px 2px 1px rgba(1,0,0,.3));
+  transform: scale(1.1);
+}
+/* ***********************************footer******************************************************* */
+footer{
+  height: 400px;
+  background-color: #0D122C;
+  opacity: .9;
+}
+footer p{
+  font-size: 150px;
+  /* transform: translate(55%,-50%); */
+}
+/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
-
+  <link rel="stylesheet" href="Css/animate.css">
   <script src="" charset="utf-8"></script>
   <title>HOTEL SEARCH</title>
 
@@ -21,14 +21,13 @@
   <script src="JS/sweetalert2.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
 
-
 </head>
 
 <body>
   <!-- <div class="container"> -->
 
     <div class="carousel-slide" data-ride="carousel">
-      <div class="nav">
+      <div class="nav animated fadeInDown">
         <ul>
           <li><i class="fab fa-connectdevelop">Hotel-search</i></li>
           <li> <a href="#">Inspiration</a>
@@ -43,21 +42,29 @@
           <li> <a href="#">Tips</a> </li>
           <li> <a href="#">support</a> </li>
 
-          <li> <input type="search" name="" value="" placeholder="Search for a City"title="Search for a City you want to visit" id="search"> </li>
-          <li><label for="search"><i class="fab fa-searchengin search"></i></label></li>
 
+          <select class="city" name="city" required>
+            <option value=""> </option>
+            <option value="US"> <a href="nairobi.html">Nairobi</a> </option>
+            <option value="AUS"> <a href="nakuru.html"></a> Nakuru </option>
+            <option value="KEN"> <a href="mombasa.html">Mombasa</a> </option>
+            <option value="UK"> <a href="kisumu.html">Kisumu</a> </option>
+          </select>
+          <!-- <li> <input type="search" name="" value="" placeholder="Search for a City"title="Search for a City you want to visit" id="enter"> </li> -->
+          <!-- <li><label for="search"><i class="fab fa-searchengin search"></i></label></li> -->
+        <!-- <button type="submit" id="search" name="button">Go</button> -->
 
         </ul>
       </div>
       <!-- Indicators -->
       <ul class="carousel-indicators">
-        <div class="header-content col-md-6">
+        <div class="header-content col-md-6 animated tada">
           <h1 class="divider">HOTEL-SEARCH</h1>
           <p>Looking for a Hotel has never been easier and faster.<br>
              Discover a hotel that defines a new dimension of luxury,<br>
              Comfort & safety. Let us help you get your ideal Hotel.<br>
           </p>
-        <button type="button" onclick="sweetalertclick()" class="btn btn-info">Explore!</button>
+        <button type="button" id="Explore" class="btn btn-info">Explore!</button>
         </div>
         <div class="hidden">
               <legend>Personal Details:</legend>
@@ -246,23 +253,132 @@
         </div>
 
       </div>
-      <div class="Tips">
+      <div class="Tips col-md-12">
         <h1>Tips on places you should visit</h1>
         <div class="col-md-12 visit">
           <ul>
-            <li class="item1"><div class="bg"> </div> </li>
-            <li class="item2"><div class="bg"></div> </li>
-            <li class="item3"><div class="bg"></div> </li>
-            <li class="item4"><div class="bg"></div> </li>
-            <li class="item5"><div class="bg"></div> </li>
-          </ul>
+            <li class="col-md-4">
+              <div class="front">
+                <h3>Nairobi</h3>
+                <p>Work description goes in here</p>
+              </div>
+              <div class="back">
+                <img src="images/nairobi.png" alt="An evanto pic" height="200px" width="200px">
+              </div>
+            </li>
+          <li class="col-md-4">
+            <div class="front">
+              <h3>Mombasa</h3>
+              <p>Work description goes in here</p>
+            </div>
+            <div class="back">
+              <img src="images/nairobi.png" alt="An evanto pic" height="200px" width="200px">
+            </div>
+          </li>
+          <li class="col-md-4">
+            <div class="front">
+              <h3>Kisumu</h3>
+              <p>Work description goes in here</p>
+            </div>
+            <div class="back">
+              <img src="images/nairobi.png" alt="An evanto pic" height="200px" width="200px">
+            </div>
+          </li>
+          <ul>
+          <li class="col-md-4">
+            <div class="front">
+              <h3>Nakuru</h3>
+              <p>Work description goes in here</p>
+            </div>
+            <div class="back">
+              <img src="images/nairobi.png" alt="An evanto pic" height="200px" width="200px">
+            </div>
+          </li>
+          <li class="col-md-4">
+            <div class="front">
+              <h3>Nanyuki</h3>
+              <p>Work description goes in here</p>
+            </div>
+            <div class="back">
+              <img src="images/nairobi.png" alt="An evanto pic" height="200px" width="200px">
+            </div>
+          </li>
+          <li class="col-md-4">
+            <div class="front">
+              <h3>Thika</h3>
+              <p>Work description goes in here</p>
+            </div>
+            <div class="back">
+              <img src="images/nairobi.png" alt="An evanto pic" height="200px" width="200px">
+            </div>
+          </li>
+          <li class="col-md-4">
+            <div class="front">
+              <h3>Eldoret</h3>
+              <p>Work description goes in here</p>
+            </div>
+            <div class="back">
+              <img src="images/nairobi.png" alt="An evanto pic" height="200px" width="200px">
+            </div>
+          </li>
+          <ul>
+          <li class="col-md-4">
+            <div class="front">
+              <h3>Kakamega</h3>
+              <p>Work description goes in here</p>
+            </div>
+            <div class="back">
+              <img src="images/nairobi.png" alt="An evanto pic" height="200px" width="200px">
+            </div>
+          </li>
         </div>
       </div>
 
     </div>
   </div>
-  <script src="JS/scripts.js"></script>
+  <!-- <div class="nakuru">
 
+   <a href="star.html"></a>
+  </div>
+  <script type="text/javascript">
+  // front-end
+  // front-end
+        $(document).ready(function(){
+          $("#Explore").click(function(){
+            $(".header-content").hide();
+            $(".hidden").show();
+          });
+
+
+  </script>
+  <script src="js/script.js"></script> -->
+  <marquee>
+    <img src="images/sarova.png" alt="An evanto pic" height="200px" width="200px">
+    <img src="images/prideInn.png" alt="An evanto pic" height="200px" width="200px">
+    <img src="images/acacia.jpg" alt="An evanto pic" height="200px" width="200px">
+    <img src="images/Sankara.jpg" alt="An evanto pic" height="200px" width="200px">
+    <img src="images/bidwood.jpeg" alt="An evanto pic" height="200px" width="200px">
+    <img src="images/Kempinski.png" alt="An evanto pic" height="200px" width="200px">
+    <img src="images/Intercontinental.jpg" alt="An evanto pic" height="200px" width="200px">
+  </marquee>
+  <footer>
+    <p><i class="fab fa-connectdevelop">Hotel-search</i></p>
+  </footer>
+
+
+  <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5bb67dbab033e9743d025a95/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 </body>
 
 </html>
