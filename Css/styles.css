@@ -1,0 +1,318 @@
+    /*  ***************************Root**********************************/
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  /* background-image: url(../images/image1.jpg); */
+  /* background-position: center; */
+  background-size: cover;
+
+
+}
+/* *******************************nav********************************************* */
+.nav{
+  /* background-color: #78180A; */
+  height: 70px;
+  /* width: 100%; */
+  background-attachment: fixed;
+}
+.nav ul{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  width: 100%;
+  background-color: #0D122C;
+  opacity: .8;
+  /* margin: auto; */
+}
+.nav li{
+  float: left;
+  margin-right: 40px;
+  width: 150px;
+  height: 40px;
+  display: inline;
+  line-height: 70px;
+  text-align: center;
+  font-size: 16px;
+}
+.nav a{
+  text-decoration: none;
+  color: #ffff;
+  display: block;
+  /* background-color: #0D122C; */
+}
+.nav a:hover{
+  border-bottom: green;
+  color: #e3e3e3;
+}
+.nav ul li ul li{
+  /* display: none; */
+}
+.nav ul li:hover ul li{
+  display: block;
+}
+
+.nav li{
+  display: inline;
+}
+.fab{
+  color: #e3e3e3;
+  font-size: 30px;
+}
+.nav input{
+  height: 30px;
+  margin-top: -30px;
+  margin-left: 118px;
+  /* background: transparent; */
+  border-left: 1px solid #ffff;
+}
+.city{
+  /* background-color: rgba(0,0,0,.8); */
+  padding: 5px;
+  font-size: 20px;
+  margin-top: 10px;
+  /* margin-left: 1150px; */
+  /* margin-left: 150px; */
+}
+/* .nakuru{
+  display:none;
+} */
+/* *******************************header-content****************************************** */
+.header-content{
+  border:1px solid #fff;
+  border-radius: 40px;
+  display:inline-block;
+  /* width: 50px; */
+  transform: translate(50%,50%);
+  width:100%;
+  text-align: center;
+  padding: 50px;
+  background-color: rgba(70, 103, 102,.9);
+  height: 300px;
+}
+.divider{
+  font-family: 'Cinzel', serif;
+  font-weight: bold;
+  color: rgba(228, 242, 242,.2);
+  text-shadow: 0px 1px 0px rgba(0,0,0,.9),
+                0px 2px 0px #ffff;
+}
+button{
+  width: 100px;
+  box-shadow: 10px solid rgba(0,0,0,.5);
+}
+.hidden{
+  padding: 20px;
+  background-color: rgba(70, 103, 102,.9);
+  width: 600px;
+  min-height: 600px;
+  visibility: hidden;
+  margin-top: -200px;
+  margin-left: -100px;
+}
+.hidden input{
+  /* display: block; */
+}
+
+/*  *****************************carousel*************************************/
+/* .particlesJS{
+  height: 1000px;
+  width: 100vh;
+  background-color: blue;
+} */
+.img{
+  height:1200px;
+  width: 1200px;
+
+}
+.carousel-inner>.item {
+    -webkit-transition: -webkit-transform 3s ease-in-out !important;
+    -o-transition: -o-transform 3s ease-in-out !important;
+    transition: transform 3s ease-in-out !important;
+    z-index: -99999;
+}
+
+/* *******************************Most visited hotels****************************************** */
+.popular-hotels{
+  background-color: rgba(226, 229, 229);
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 0  rgba(0,0,0,.2),
+              0 2px 0 #CED8D8;
+  /* padding: 20px; */
+  /* min-height: 200px; */
+
+}
+.popular-hotels img{
+  padding: 10px;
+  margin-left: -30px;
+  border: 1px solid rgba(0,0,0,.3);
+}
+.kempiski-details{
+  margin-left: 180px;
+  margin-top: -200px;
+
+}
+.kempiski-details li{
+  list-style: none;
+  display: inline;
+  font-size: 20px;
+  font-weight: lighter;
+  margin: -15px;
+  position: relative;
+  color: #0D122C;
+  /* max-width: 340px; */
+  /* background-color: blue; */
+}
+.kempiski-details h3{
+  background-color: #0D122C;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 5px;
+  text-align: center;
+  color: #ffff;
+}
+.kempiski-details h3:hover{
+  background-color: #787B7B;
+  box-shadow: 0 1px 0 rgba(0,0,0,.9);
+}
+.offered li{
+  font-size: 15px;
+  padding: 22px;
+}
+.directions {
+  float: right;
+  padding: 10px;
+  margin-right: -65px;
+  /* border: 1px solid rgba(0,0,0,.3); */
+  margin-top: -210px;
+}
+.directions span{
+  font-size: 20px;
+  font-weight: bolder;
+  color: #ffff;
+  height: 40px;
+  width: 150px;
+  background-color:#0D122C;
+  padding: 5px;
+}
+/* *******************************Tips******************************************* */
+.Tips ul{
+  margin-top: 100px;
+	-webkit-perspective:1000;
+
+
+}
+.Tips li{
+	margin-bottom: 40px;
+  padding-left: 50px;
+
+}
+
+.Tips ul li{
+	height: 200px;
+	width: 200px;
+	float: left;
+	margin-right: 30px;
+	list-style: none;
+	position: relative;
+	cursor: pointer;
+}
+li:hover .front{
+	z-index: 0;
+	-webkit-transform:rotateY(180deg);
+}
+li:hover .back{
+	-webkit-transform:rotateY(0);
+}
+.Tips div{
+	height: 100%;
+	width:100%;
+	position: absolute;
+	-webkit-transition:all 1s;
+	-webkit-backface-visibility:hidden;
+	-webkit-box-shadow:0 13px 10px -8px rgba(0,0,0,.5);
+}
+li .front{
+	z-index: 3;
+	text-align: center;
+	-line-height: 200px;
+	-font-size: 0px;
+	background-color: #e3e3e3;
+}
+li .back{
+	-webkit-transform:rotateY(180deg);
+}
+/* *********************************Collaborators********************************************* */
+marquee{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    margin-top: 600px;
+    background-color: rgba(206, 227, 227,.3);
+    height: 250px;
+
+}
+marquee img{
+  border-radius: 50%;
+  margin: 30px;
+  box-shadow:0 13px 10px -8px rgba(0,0,0,.5);
+  transition: .2s ease-in-out;
+}
+marquee img:hover{
+  filter: none;
+  -webkit-filter: none;
+  filter:drop-shadow(1px 2px 1px rgba(1,0,0,.3));
+  transform: scale(1.1);
+}
+/* ***********************************footer******************************************************* */
+footer{
+  height: 400px;
+  background-color: #0D122C;
+  opacity: .9;
+}
+footer p{
+  font-size: 150px;
+  /* transform: translate(55%,-50%); */
+}
+/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
